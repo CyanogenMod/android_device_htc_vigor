@@ -57,7 +57,10 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/android0/f_mass_storag
 # GPS
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := vigor
 
-# TWRP
+# Custom Recovery
+TARGET_PREBUILT_KERNEL := device/htc/vigor/kernel
+BOARD_HAS_NO_SELECT_BUTTON := true
+BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_15x24.h\"
 TARGET_RECOVERY_INITRC := device/htc/vigor/recovery/init.rc
 DEVICE_RESOLUTION := 720x1280
 TW_INTERNAL_STORAGE_PATH := "/emmc"
