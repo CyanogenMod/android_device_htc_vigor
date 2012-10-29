@@ -57,8 +57,8 @@ oneshot
 service adbd /sbin/adbd recovery
     disabled
 
-on property:persist.sys.usb.config=1
+on property:persist.service.adb.enable=1
     start adbd
 
-on property:persist.sys.usb.config=0
+on property:persist.service.adb.enable=0
     stop adbd
