@@ -20,7 +20,6 @@ on init
     mkdir /data/data
     mkdir /cache
     mkdir /mtdcache
-    mkdir /devlog
     mkdir /emmc
     mount /tmp /tmp tmpfs
 
@@ -58,8 +57,8 @@ oneshot
 service adbd /sbin/adbd recovery
     disabled
 
-on property:persist.service.adb.enable=1
+on property:persist.sys.usb.config=1
     start adbd
 
-on property:persist.service.adb.enable=0
+on property:persist.sys.usb.config=0
     stop adbd
