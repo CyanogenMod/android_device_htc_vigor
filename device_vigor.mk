@@ -14,15 +14,6 @@ else
 	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
 
-# Recovery and custom charging
-PRODUCT_COPY_FILES := \
-device/htc/vigor/recovery/sbin/charging:recovery/root/sbin/charging \
-device/htc/vigor/recovery/sbin/choice_fn:recovery/root/sbin/choice_fn \
-device/htc/vigor/recovery/sbin/detect_key:recovery/root/sbin/detect_key \
-device/htc/vigor/recovery/sbin/htcbatt:recovery/root/sbin/htcbatt \
-device/htc/vigor/recovery/sbin/offmode_charging:recovery/root/sbin/offmode_charging\
-device/htc/vigor/recovery/sbin/power_test:recovery/root/sbin/power_test
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
 
