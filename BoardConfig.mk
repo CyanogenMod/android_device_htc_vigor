@@ -1,4 +1,3 @@
-
 # inherit from the proprietary version
 -include vendor/htc/vigor/BoardConfigVendor.mk
 
@@ -9,6 +8,7 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno200
 # Architecture
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
+TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_ARCH_VARIANT_CPU := cortex-a9
 TARGET_CPU_SMP := true
