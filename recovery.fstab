@@ -8,4 +8,3 @@
 /external_sd	 vfat	 /dev/block/mmcblk1p1
 /system         ext4            /dev/block/mmcblk0p29
 /misc           emmc            /dev/block/mmcblk0p24
-/emmc		vfat            /dev/block/mmcblk0p38
